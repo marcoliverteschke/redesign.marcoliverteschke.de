@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="description" content="Marc-Oliver Marc Oliver Teschke Blog Flickr Fotos Photos Twitter" />
+		<title>marc-oliver teschke &mdash; alles, was es zu wissen gibt</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="apple-touch-icon" href="http://www.marcoliverteschke.de/apple-touch-icon.png" />
+		<script type="text/javascript" src="script/jquery-1.2.6.pack.js"> </script>
+		<script type="text/javascript" src="script/script.js"> </script>
+	</head>
+	<body>
+	
+		<div id="header">
+			<div id="navigation"><h1>marc-oliver teschke...</h1></div>
+		</div>
+		<div id="content">
+			<div id="blog_container" class="node">
+				<div id="blog_container_top" class="node_top"><h1>bloggt</h1></div>
+				<div id="blog_content" class="node_content">
+					<div class="node_link"><a href="http://www.damot.org/">http://www.damot.org</a></div>
+					<h2><?php echo $blog_data["title"] ?></h2>
+					<span class="date"><?php echo date("d.m.Y H:i", strtotime($blog_data["pubdate"])) ?></span>
+					<?php echo utf8_encode($blog_data["content"]["encoded"]) ?>
+				</div>
+				<div id="blog_container_bottom" class="node_bottom"> </div>
+			</div>
+			<div id="flickr_container" class="node">
+				<div id="flickr_container_top" class="node_top"><h1>flickrt</h1></div>
+				<div id="flickr_content" class="node_content">
+					<div class="node_link"><a href="http://www.flickr.com/photos/damot/">http://www.flickr.com/photos/damot/</a></div>
+					<?php
+						for($i = 0; $i < 2; $i++){
+							echo '<div class="pics">';
+							echo '<h2>'.$flickr_data[$i]["title"].'</h2>';
+							echo '<span class="date">'.date("d.m.Y H:i", strtotime($flickr_data[$i]["pubdate"])).'</span><br />';
+							echo $flickr_data[$i]["description"]."";
+							echo '</div>';
+						}
+					?>
+				</div>
+				<div id="flickr_container_bottom" class="node_bottom"> </div>
+			</div>
+			<div id="twitter_container" class="node">
+				<div id="twitter_container_top" class="node_top"><h1>twittert</h1></div>
+				<div id="twitter_content" class="node_content">
+					<div class="node_link"><a href="http://twitter.com/marcoliver">http://twitter.com/marcoliver</a></div>
+					<?php
+						for($i = 0; $i < 3; $i++){
+							echo '<div class="tweets">';
+							echo '<span class="date">'.date("d.m.Y H:i", strtotime($twitter_data[$i]["pubdate"])).'</span><br />';
+							echo $twitter_data[$i]["summary"]."";
+							echo '</div>';
+						}
+					?>
+				</div>
+				<div id="twitter_container_bottom" class="node_bottom"> </div>
+			</div>
+			<div id="kontakt_container" class="node">
+				<div id="kontakt_container_top" class="node_top"><h1>ist ganz Ohr</h1></div>
+				<div id="kontakt_content" class="node_content">
+					<div id="kontaktform">
+					<?php	echo form_open("http://www.marcoliverteschke.de/");
+							if(!empty($kontakt_message)){
+								echo '<p class="success">'.$kontakt_message.'</p>';
+							}
+							echo form_hidden("Sendmail", $_POST["Sendmail"]);
+							echo $this->validation->error_string;
+							echo '<table>';
+							echo '<tr><td class="label">Name</td><td>'.form_input(array("name" => "Name", "value" => $_POST["Name"], "maxlength" => "255", "size" => "40")).'</td></tr>';
+							echo '<tr><td class="label">E-Mail</td><td>'.form_input(array("name" => "Email", "value" => $_POST["Email"], "maxlength" => "255", "size" => "40")).'</td></tr>';
+							echo '<tr><td class="label">Nachricht</td><td>'.form_textarea(array("name" => "Nachricht", "value" => $_POST["Nachricht"], "cols" => "39", "rows" => "10")).'</td></tr>';
+							echo '<tr><td colspan="2" class="submit">'.form_submit(array("value" => "Abschicken")).'</td></tr>';
+							echo '</table>';
+							echo form_close(); ?>
+					</div>
+				</div>
+				<div id="kontakt_container_bottom" class="node_bottom"> </div>
+			</div>
+		</div>
+	
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-377570-4");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+	</body>
+</html>

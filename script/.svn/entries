@@ -1,0 +1,62 @@
+8
+
+dir
+2
+http://marcoliver.svn.beanstalkapp.com/marcoliverteschke_de/script
+http://marcoliver.svn.beanstalkapp.com/marcoliverteschke_de
+
+
+
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+
+
+svn:special svn:externals svn:needs-lock
+
+script.js
+file
+
+
+
+
+2008-08-24T17:50:01.000000Z
+beccf1cca155c5bc40cebecdcf1e1fa3
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
+jquery-1.2.6.pack.js
+file
+
+
+
+
+2008-08-24T17:50:01.000000Z
+7447d985396a9b7b507d5841c28dd7f8
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
+jquery.js
+file
+0
+
+
+add
+
+jquery-1.2.6.js
+file
+
+
+
+
+2008-08-24T17:50:01.000000Z
+343607636acfee88faa2b638330a3370
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+

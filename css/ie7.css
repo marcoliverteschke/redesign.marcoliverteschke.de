@@ -1,0 +1,75 @@
+/* @override http://localhost:8888/redesign.marcoliverteschke.de/css/screen.css */
+
+/*****Basic Elements*****/
+body{
+	background-color: #e5d9be;
+	background-image: url('../gfx/footer_bg.png');
+	font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
+	font-size: 80%;
+}
+
+
+
+/*****Generic Classes*****/
+
+
+
+/*****Basic Layout*****/
+#content{
+	background-image: url('../gfx/content_bg.png');	
+	padding: 3em 0;
+}
+
+.container{
+}
+
+
+/*****Header*****/
+#header{
+	background-image: url('../gfx/header_bg.png');
+	padding: 3em 0;
+}
+
+#header .headline{
+	margin: 0 auto;
+	width: 950px;
+}
+
+#header h1{
+}
+
+
+/*****Content*****/
+.box_content{
+	border: 1px solid #000000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 1px 1px 2px #888;
+	-webkit-box-shadow: 1px 1px 2px #888;
+	-moz-box-shadow: 1px 1px 2px #888;
+	opacity: .4;
+	padding: 10px;
+	-webkit-transition: opacity .2s linear;
+}
+
+.box_content:hover{
+	background-color: #fff3d5;
+	box-shadow: 4px 4px 4px #888;
+	-webkit-box-shadow: 4px 4px 4px #888;
+	-moz-box-shadow: 4px 4px 4px #888;
+	opacity: .7;
+}
+
+
+
+/*****Footer*****/
+
+
+/*****Etc*****/
+#flickr_www{
+	text-align: center;
+}
+
+
+

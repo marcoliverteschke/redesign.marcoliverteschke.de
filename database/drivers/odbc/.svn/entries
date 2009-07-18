@@ -1,0 +1,81 @@
+8
+
+dir
+2
+http://marcoliver.svn.beanstalkapp.com/marcoliverteschke_de/database/drivers/odbc
+http://marcoliver.svn.beanstalkapp.com/marcoliverteschke_de
+
+
+
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+
+
+svn:special svn:externals svn:needs-lock
+
+odbc_forge.php
+file
+
+
+
+
+2008-08-24T17:49:59.000000Z
+1a77adca7f6ca2541b8db68c7ad389c5
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
+odbc_utility.php
+file
+
+
+
+
+2008-08-24T17:49:59.000000Z
+ef696eccb7d95a24fe9acf2834d24999
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
+odbc_driver.php
+file
+
+
+
+
+2008-08-24T17:49:59.000000Z
+998bc674a0b03a8aa7ec9cd151aebe35
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
+index.html
+file
+
+
+
+
+2008-08-24T17:49:59.000000Z
+dd54539243bb14cf4e88be902741435d
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
+odbc_result.php
+file
+
+
+
+
+2008-08-24T17:49:59.000000Z
+cae8b643e7aa57a74c992e25fec60c3b
+2008-10-27T17:31:33.761451Z
+2
+marcoliver
+has-props
+
