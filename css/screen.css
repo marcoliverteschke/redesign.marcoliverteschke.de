@@ -74,14 +74,29 @@ address{
 	text-decoration: none;
 }
 
-#flickr_www{
+#flickr_badge_wrapper img {
+	border: 1px solid black !important;
+	display: block;
+	margin: 1em auto 1em auto;
+}
+
+#flickr_www {
+	color:#3993ff;
+	display:block;
+	font: 11px Arial, Helvetica, Sans serif;
 	margin-bottom: 1em;
+	padding:0 10px 0 10px;
 	text-align: center;
 }
 
-#flickr_badge_image2 img{
-	margin: 1em 0;
+#flickr_badge_uber_wrapper a:hover, #flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {
+	background:inherit;
+	color:#3993ff;
+	text-decoration:none;
 }
+
 
 .tweet{
 	margin-bottom: 1em;

@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
@@ -7,22 +8,6 @@
 		<link rel="stylesheet" href="css/blueprint/screen.css" />
 		<link rel="stylesheet" href="css/screen.css" />
 		<link rel="apple-touch-icon" href="http://www.marcoliverteschke.de/apple-touch-icon.png" />
-		<!-- Flickr Badge CSS -->
-		<style type="text/css">
-		#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
-		#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
-		#flickr_icon_td {padding:0 5px 0 0 !important;}
-		.flickr_badge_image {text-align:center !important;}
-		.flickr_badge_image img {border: 1px solid black !important;}
-		#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
-		#flickr_badge_uber_wrapper a:hover,
-		#flickr_badge_uber_wrapper a:link,
-		#flickr_badge_uber_wrapper a:active,
-		#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
-		#flickr_badge_wrapper {}
-		#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
-		</style>
-		<!-- Flickr Badge CSS -->		
 	</head>
 	<body>
 		<div id="header">
@@ -38,7 +23,7 @@
 							foreach($projects_data as $project)
 							{
 								echo '<div class="project">';
-								echo '<a href="'.$project["url"].'" title="'.$project["title"].'"><img src="'.$project["image"].'" /></a>';
+								echo '<a href="'.$project["url"].'" title="'.$project["title"].'"><img src="'.$project["image"].'" alt="'.$project["title"].'" /></a>';
 								echo '</div>';
 							}
 						?>
@@ -115,10 +100,10 @@
 			<div class="span-8 last">
 				<h2>vernetzung&hellip;</h2>
 				<ul>
-					<li><a href="http://twitter.com/marcoliver" target="_blank">twitter</a></li>
-					<li><a href="http://www.flickr.com/photos/damot/" target="_blank">Flickr</a></li>
-					<li><a href="http://www.lastfm.de/user/DaMOT" target="_blank">Last.fm</a></li>
-					<li><a href="http://www.facebook.com/marcoliverteschke" target="_blank">Facebook</a></li>
+					<li><a href="http://twitter.com/marcoliver">twitter</a></li>
+					<li><a href="http://www.flickr.com/photos/damot/">Flickr</a></li>
+					<li><a href="http://www.lastfm.de/user/DaMOT">Last.fm</a></li>
+					<li><a href="http://www.facebook.com/marcoliverteschke">Facebook</a></li>
 				</ul>
 			</div>
 			<div class="span-24 last copyright">&copy; 2009 Marc-Oliver Teschke | <a href="<?php echo site_url("impressum") ?>">Impressum</a></div>

@@ -41,10 +41,12 @@ class Marcoliver extends Controller {
 		$page_data["projects_data"][2]["image"] = "gfx/flow.png";
 
 		$page_data["flickr_data"] = '<!-- Start of Flickr Badge -->
-		<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
-		<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&display=latest&size=t&layout=v&source=user&user=35972450%40N00"></script>
-		</table>
-		</td></tr></table>
+		<div id="flickr_badge_uber_wrapper">
+			<div><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a></div>
+			<div id="flickr_badge_wrapper">
+				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&amp;display=latest&amp;size=t&amp;layout=v&amp;source=user&amp;user=35972450%40N00"></script>
+			</div>
+		</div>
 		<!-- End of Flickr Badge -->
 		';
 
