@@ -43,6 +43,8 @@
 $route['default_controller'] = "marcoliver";
 $route['scaffolding_trigger'] = "";
 
+$route['impressum'] = "marcoliver/impressum";
+
 
 /* End of file routes.php */
 /* Location: ./system/application/config/routes.php */

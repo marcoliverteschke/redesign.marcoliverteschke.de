@@ -4,11 +4,12 @@
 body{
 	background-color: #e5d9be;
 	background-image: url('../gfx/footer_bg.png');
+	color: #5a4a43;
 	font-family: Georgia, "New Century Schoolbook", "Nimbus Roman No9 L", serif;
-	font-size: 80%;
+	font-size: 90%;
 }
 
-body *{
+h1, h2, h3, a{
 	color: #5a4a43;
 }
 
@@ -16,9 +17,13 @@ a:hover{
 	color: inherit;
 }
 
-/*ul{
-	margin-left: 0;
-}*/
+img, a img{
+	border: 1px solid #5a4a43;
+}
+
+address{
+	font-style: normal;
+}
 
 
 /*****Generic Classes*****/
@@ -28,9 +33,6 @@ a:hover{
 #content{
 	background-image: url('../gfx/content_bg.png');	
 	padding: 3em 0;
-}
-
-.container{
 }
 
 
@@ -45,8 +47,9 @@ a:hover{
 	width: 950px;
 }
 
-#header h1{
+#header h1 a{
 	color: #e5d9be;
+	text-decoration: none;
 }
 
 
@@ -65,34 +68,12 @@ a:hover{
 	box-shadow: 0px 1px 4px #888;
 	-webkit-box-shadow: 0px 1px 4px #888;
 	-moz-box-shadow: 0px 1px 4px #888;
-	-webkit-transition-timing-function: ease-out;
 }
 
 .box_content h2 a{
 	text-decoration: none;
 }
 
-
-/*****Footer*****/
-#footer{
-	padding-top: 1.5em;
-}
-
-#footer, #footer *{
-	color: #e5d9be;
-}
-
-#footer h2{
-	font-size: 1.5em;
-}
-
-.copyright{
-	padding: 1em 0;
-	text-align: center;
-}
-
-
-/*****Etc*****/
 #flickr_www{
 	margin-bottom: 1em;
 	text-align: center;
@@ -114,3 +95,38 @@ a:hover{
 .post h3{
 	margin-bottom: .5em;
 }
+
+.project{
+	margin: 0 auto 1.5em auto;
+	width: 150px;
+}
+
+
+
+/*****Footer*****/
+#footer{
+	padding-top: 1.5em;
+}
+
+#footer, #footer *{
+	color: #e5d9be;
+}
+
+#footer h2{
+	font-size: 1.5em;
+}
+
+.copyright{
+	padding: 1em 0 3em 0;
+	text-align: center;
+}
+
+.about_2{
+	padding-top: 3.3em;
+}
+
+
+/*****Etc*****/
+
+
+

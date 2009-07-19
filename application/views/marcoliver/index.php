@@ -7,8 +7,6 @@
 		<link rel="stylesheet" href="css/blueprint/screen.css" />
 		<link rel="stylesheet" href="css/screen.css" />
 		<link rel="apple-touch-icon" href="http://www.marcoliverteschke.de/apple-touch-icon.png" />
-		<script type="text/javascript" src="script/jquery.js"> </script>
-		<script type="text/javascript" src="script/script.js"> </script>
 		<!-- Flickr Badge CSS -->
 		<style type="text/css">
 		#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
@@ -28,18 +26,26 @@
 	</head>
 	<body>
 		<div id="header">
-			<div class="headline"><h1>marc-oliver teschke&hellip;</h1></div>
+			<div class="headline"><h1><a href="<?php echo base_url("") ?>">marc-oliver teschke&hellip;</a></h1></div>
 		</div>
 		<div id="content">
 			<div class="container">
+				<?php if(!empty($projects_data)){ ?>
 				<div class="span-6 home_box">
 					<div class="box_content">
 						<h2>entwickelt</h2>
-						procrastinationdashtimer.com
-						flow-rss.com
-						PLANWERK 6
+						<?php
+							foreach($projects_data as $project)
+							{
+								echo '<div class="project">';
+								echo '<a href="'.$project["url"].'" title="'.$project["title"].'"><img src="'.$project["image"].'" /></a>';
+								echo '</div>';
+							}
+						?>
 					</div>
 				</div>
+				<?php } ?>
+				<?php if(!empty($twitter_data)){ ?>
 				<div class="span-6 home_box">
 					<div class="box_content">
 						<h2><a href="http://twitter.com/marcoliver">twittert</a></h2>
@@ -53,6 +59,8 @@
 						?>
 					</div>
 				</div>
+				<?php } ?>
+				<?php if(!empty($blog_data)){ ?>
 				<div class="span-6 home_box">
 					<div class="box_content">
 						<h2><a href="http://www.damot.org/">bloggt</a></h2>
@@ -79,25 +87,30 @@
 						?>
 					</div>
 				</div>
+				<?php } ?>
+				<?php if(!empty($flickr_data)){ ?>
 				<div class="span-6 last home_box">
 					<div class="box_content">
 						<h2><a href="http://www.flickr.com/photos/damot/">flickrt</a></h2>
-						<!-- Start of Flickr Badge -->
-						<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
-						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=3&display=latest&size=t&layout=v&source=user&user=35972450%40N00"></script>
-						</table>
-						</td></tr></table>
-						<!-- End of Flickr Badge -->
+						<?php echo $flickr_data ?>
 					</div>
 				</div>
+				<?php } ?>
+				<?php if(!empty($impressum_data)){ ?>
+					<div class="span-24 last home_box">
+						<h2>Impressum</h2>
+						<?php echo $impressum_data ?>
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 		<div id="footer" class="container">
-			<div class="span-8">
+			<div class="span-8 about_1">
 				<h2>über&hellip;</h2>
+				<?php echo $about_1 ?>
 			</div>
-			<div class="span-8">
-				bla
+			<div class="span-8 about_2">
+				<?php echo $about_2 ?>
 			</div>
 			<div class="span-8 last">
 				<h2>vernetzung&hellip;</h2>
@@ -108,7 +121,7 @@
 					<li><a href="http://www.facebook.com/marcoliverteschke" target="_blank">Facebook</a></li>
 				</ul>
 			</div>
-			<div class="span-24 last copyright">&copy; 2009 Marc-Oliver Teschke</div>
+			<div class="span-24 last copyright">&copy; 2009 Marc-Oliver Teschke | <a href="<?php echo site_url("impressum") ?>">Impressum</a></div>
 		</div>
 		<script type="text/javascript">
 			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

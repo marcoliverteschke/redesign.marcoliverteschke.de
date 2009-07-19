@@ -11,7 +11,12 @@
 |	http://www.your-site.com/
 |
 */
-$config['base_url']	= "http://www.marcoliverteschke.de/";
+if($_SERVER["SERVER_ADDR"] == "localhost")
+{
+	$config['base_url']	= "http://localhost:8888/redesign.marcoliverteschke.de/";
+}else{
+	$config['base_url']	= "http://www.marcoliverteschke.de/";
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +28,7 @@ $config['base_url']	= "http://www.marcoliverteschke.de/";
 | variable so that it is blank.
 |
 */
-$config['index_page'] = "index.php";
+$config['index_page'] = "";
 
 /*
 |--------------------------------------------------------------------------
