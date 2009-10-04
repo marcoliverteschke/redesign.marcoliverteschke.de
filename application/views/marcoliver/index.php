@@ -42,7 +42,8 @@
 						<?php
 							foreach($twitter_data as $tweet){
 								echo '<div class="tweet">';
-								echo '<span class="date">'.date("d.m.Y H:i", strtotime($tweet->get_date())).'</span><br />';
+//								echo '<span class="date">'.date("d.m.Y H:i", strtotime($tweet->get_date())).'</span><br />';
+								echo '<span class="date">'.strtotime($tweet->get_date()).'</span><br />';
 								echo $tweet->get_content()."";
 								echo '</div>';
 							}
