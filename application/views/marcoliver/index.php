@@ -1,22 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="de">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
 	<head>
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 		<meta name="description" content="Marc-Oliver Marc Oliver Teschke Blog Flickr Fotos Photos Twitter" />
 		<title>marc-oliver teschke &mdash; alles, was es zu wissen gibt</title>
-		<link rel="stylesheet" href="css/blueprint/screen.css" />
-		<link rel="stylesheet" href="css/screen.css" />
-		<link rel="apple-touch-icon" href="http://www.marcoliverteschke.de/apple-touch-icon.png" />
+		<?php echo link_tag("css/blueprint/screen.css") ?>
+		<?php echo link_tag("css/screen.css") ?>
+		<?php echo link_tag(array("href" => "apple-touch-icon.png", "rel" => "apple-touch-icon")) ?>
+
+		<script type="text/javascript" src="/script/Hyphenator.js ?>"></script>
+		<script type="text/javascript">Hyphenator.run();</script>
+		<script type="text/javascript" src="http://use.typekit.com/ssp8rhg.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
 		<div id="header">
-			<div class="headline"><h1><a href="<?php echo base_url("") ?>">marc-oliver teschke&hellip;</a></h1></div>
+			<div class="headline"><h1><a href="<?php echo base_url("/") ?>">marc-oliver teschke&hellip;</a></h1></div>
 		</div>
 		<div id="content">
 			<div class="container">
 				<?php if(!empty($projects_data)){ ?>
-				<div class="span-6 home_box">
+				<div class="span-6 home_box hyphenate">
 					<div class="box_content">
 						<h2>entwickelt</h2>
 						<?php
@@ -31,7 +36,7 @@
 				</div>
 				<?php } ?>
 				<?php if(!empty($twitter_data)){ ?>
-				<div class="span-6 home_box">
+				<div class="span-6 home_box hyphenate">
 					<div class="box_content">
 						<h2><a href="http://twitter.com/marcoliver">twittert</a></h2>
 						<?php
@@ -46,7 +51,7 @@
 				</div>
 				<?php } ?>
 				<?php if(!empty($blog_data)){ ?>
-				<div class="span-6 home_box">
+				<div class="span-6 home_box hyphenate">
 					<div class="box_content">
 						<h2><a href="http://www.damot.org/">bloggt</a></h2>
 						<?php
@@ -74,7 +79,7 @@
 				</div>
 				<?php } ?>
 				<?php if(!empty($flickr_data)){ ?>
-				<div class="span-6 last home_box">
+				<div class="span-6 last home_box hyphenate">
 					<div class="box_content">
 						<h2><a href="http://www.flickr.com/photos/damot/">flickrt</a></h2>
 						<?php echo $flickr_data ?>
@@ -98,12 +103,13 @@
 				<?php echo $about_2 ?>
 			</div>
 			<div class="span-8 last">
-				<h2>vernetzung&hellip;</h2>
+				<h2>orte&hellip;</h2>
 				<ul>
 					<li><a href="http://twitter.com/marcoliver">twitter</a></li>
 					<li><a href="http://www.flickr.com/photos/damot/">Flickr</a></li>
 					<li><a href="http://www.lastfm.de/user/DaMOT">Last.fm</a></li>
 					<li><a href="http://www.facebook.com/marcoliverteschke">Facebook</a></li>
+					<li><a href="http://playground.marcoliverteschke.de/">spielwiese</a></li>
 				</ul>
 			</div>
 			<div class="span-24 last copyright">&copy; 2009 Marc-Oliver Teschke | <a href="<?php echo site_url("impressum") ?>">Impressum</a></div>

@@ -1,4 +1,7 @@
-/* @override http://localhost:8888/redesign.marcoliverteschke.de/css/screen.css */
+/* @override 
+	http://localhost:8888/redesign.marcoliverteschke.de/css/screen.css
+	http://www.marcoliverteschke.de/css/screen.css
+*/
 
 /*****Basic Elements*****/
 body{
@@ -23,6 +26,10 @@ img, a img{
 
 address{
 	font-style: normal;
+}
+
+li {
+	margin-bottom: .5em;
 }
 
 

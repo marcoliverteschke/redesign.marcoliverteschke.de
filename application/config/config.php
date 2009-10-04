@@ -16,6 +16,7 @@ if($_SERVER["SERVER_ADDR"] == "localhost")
 	$config['base_url']	= "http://localhost:8888/redesign.marcoliverteschke.de/";
 }else{
 	$config['base_url']	= "http://www.marcoliverteschke.de/";
+//	$config['base_url']	= "http://s295203872.online.de/marcoliverteschke.de/";
 }
 
 /*

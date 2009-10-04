@@ -6,9 +6,10 @@ class Marcoliver extends Controller {
 	{
 		parent::Controller();
 		$this->load->helper("url");
+		$this->load->helper("html");
 		
 		$this->about_1 = 'Ich bin Marc. Oliver. Marc-Oliver. Seit 2007 Entwickler für Internetanwendungen bei <br /><a href="http://www.planwerk6.de">PLANWERK 6</a> in Düsseldorf und äußerst gelegentlich auch in designerischer Aufgabe tätig. Was mich zu diesem Unfug qualifiziert sind meine Abschlüsse als <em>Staatlich geprüfter Informatiker Multimedia</em> sowie <em>BSc Internet Application Development</em> und der Drang danach, coole Dinge zu erschaffen.';
-		$this->about_2 = 'Wenn ich nichts besseres zu tun habe, versuche ich mich in der Fotografie, der Schriftstellerei und der Schauspielerei, oder entwickle seltsame und nützliche Dinge wie den <a href="http://procrastinationdashtimer.com">Procrastination Dash Timer</a> und <a href="http://www.flow-rss.com">Flow RSS</a>.';
+		$this->about_2 = 'Wenn ich nichts besseres zu tun habe, versuche ich mich in der Fotografie, der Schriftstellerei und der Schauspielerei, oder entwickle seltsame und nützliche Dinge wie den <a href="http://procrastinationdashtimer.com">Procrastination Dash Timer</a> und <del><a href="http://www.flow-rss.com">Flow RSS</a></del>.';
 	}
 	
 	function index()
