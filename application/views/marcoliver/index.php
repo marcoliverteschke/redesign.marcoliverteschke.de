@@ -42,8 +42,7 @@
 						<?php
 							foreach($twitter_data as $tweet){
 								echo '<div class="tweet">';
-//								echo '<span class="date">'.date("d.m.Y H:i", strtotime($tweet->get_date())).'</span><br />';
-								echo '<span class="date">'.strtotime($tweet->get_date()).'</span><br />';
+								echo '<span class="date">'.$tweet->get_date().'</span><br />';
 								echo $tweet->get_content()."";
 								echo '</div>';
 							}
@@ -60,7 +59,7 @@
 							{
 								echo '<div class="post">';
 								echo '<h3>'.$item->get_title().'</h3>';
-								echo '<span class="date">'.date("d.m.Y H:i", strtotime($item->get_date())).'</span>';
+								echo '<span class="date">'.$item->get_date().'</span>';
 								$content = $item->get_content();
 								if(strlen($content) > 750)
 								{
