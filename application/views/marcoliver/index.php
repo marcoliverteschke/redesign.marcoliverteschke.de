@@ -21,7 +21,7 @@
 		<div id="content">
 			<div class="container">
 				<?php if(!empty($projects_data)){ ?>
-				<div class="span-6 home_box hyphenate">
+				<div class="span-8 home_box hyphenate">
 					<div class="box_content">
 						<h2>entwickelt</h2>
 						<?php
@@ -36,7 +36,7 @@
 				</div>
 				<?php } ?>
 				<?php if(!empty($twitter_data)){ ?>
-				<div class="span-6 home_box hyphenate">
+				<div class="span-8 home_box hyphenate">
 					<div class="box_content">
 						<h2><a href="http://twitter.com/marcoliver">twittert</a></h2>
 						<?php
@@ -50,8 +50,16 @@
 					</div>
 				</div>
 				<?php } ?>
+				<?php if(!empty($flickr_data)){ ?>
+				<div class="span-8 last home_box hyphenate">
+					<div class="box_content">
+						<h2><a href="http://www.flickr.com/photos/damot/">flickrt</a></h2>
+						<?php echo $flickr_data ?>
+					</div>
+				</div>
+				<?php } ?>
 				<?php if(!empty($blog_data)){ ?>
-				<div class="span-6 home_box hyphenate">
+				<div class="span-24 last home_box hyphenate">
 					<div class="box_content">
 						<h2><a href="http://www.damot.org/">bloggt</a></h2>
 						<?php
@@ -75,14 +83,6 @@
 								echo "</div>";
 							}
 						?>
-					</div>
-				</div>
-				<?php } ?>
-				<?php if(!empty($flickr_data)){ ?>
-				<div class="span-6 last home_box hyphenate">
-					<div class="box_content">
-						<h2><a href="http://www.flickr.com/photos/damot/">flickrt</a></h2>
-						<?php echo $flickr_data ?>
 					</div>
 				</div>
 				<?php } ?>

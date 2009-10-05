@@ -61,6 +61,11 @@ li {
 
 
 /*****Content*****/
+.home_box {
+	margin-bottom: .7em;
+}
+
+
 .box_content{
 	border-radius: 5px;
 	-moz-border-radius: 5px;
